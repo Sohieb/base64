@@ -1,6 +1,18 @@
 <html>
-    <head></head>
+    <head>
+        <title>Base64 converter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
     <body>
-        <h1>Base64 converter</h1>
+        <div class="container">
+            <h1>Base64 converter</h1>
+            <textarea id="inputString" class="form-control" rows="5" id="comment"></textarea>
+            <!-- <input type="text" id="inputString" class="form-inline"> -->
+            <button onclick="convert()" class="btn btn-primary">Convert to Base64</button>
+            <br>
+            <span id="result"></span>
+        </div>
     </body>
 </html>
